@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seleema Tour API Docs</title>
+
+    <!-- Swagger UI CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
+  </head>
+  <body>
+    <div id="swagger-ui"></div>
+
+    <!-- Swagger UI JS -->
+    <script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
+    <script>
+      window.onload = () => {
+        SwaggerUIBundle({
+          url: "https://seleema-tour-api.vercel.app/api-docs.json",
+          dom_id: "#swagger-ui",
+          deepLinking: true,
+          persistAuthorization: true,
+        });
+      };
+    </script>
+  </body>
+</html>
